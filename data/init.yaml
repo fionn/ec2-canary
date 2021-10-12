@@ -1,0 +1,16 @@
+#cloud-config
+
+users:
+  - default
+
+ssh_import_id:
+  - gh:fionn
+
+package_update: true
+package_upgrade: true
+
+packages:
+  - git
+  - ansible
+
+package_reboot_if_required: true
